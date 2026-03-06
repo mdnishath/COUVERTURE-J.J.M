@@ -1,4 +1,4 @@
-import type { SiteConfig } from "@/lib/wordpress";
+﻿import type { SiteConfig } from "@/lib/wordpress";
 
 interface JsonLdProps {
   siteConfig: SiteConfig;
@@ -10,11 +10,11 @@ export default function JsonLd({ siteConfig }: JsonLdProps) {
     "@type": "RoofingContractor",
     name: siteConfig.businessName,
     description: siteConfig.description,
-    url: "https://couverture-jjm.fr",
+    url: "https://couverturejjm.com",
     telephone: siteConfig.phoneRaw,
     email: siteConfig.email,
-    image: "https://couverture-jjm.fr/images/og-image.jpg",
-    logo: "https://couverture-jjm.fr/images/logo.png",
+    image: "https://couverturejjm.com/images/og-image.jpg",
+    logo: "https://couverturejjm.com/images/logo.png",
     priceRange: "$$",
     address: {
       "@type": "PostalAddress",

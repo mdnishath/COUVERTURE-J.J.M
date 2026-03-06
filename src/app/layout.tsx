@@ -1,4 +1,4 @@
-import type { Metadata } from "next";
+﻿import type { Metadata } from "next";
 import { Montserrat, Open_Sans } from "next/font/google";
 import "./globals.css";
 import Header from "@/components/layout/Header";
@@ -29,7 +29,7 @@ export async function generateMetadata(): Promise<Metadata> {
   const appearance = await getAppearance();
 
   return {
-    metadataBase: new URL("https://couverture-jjm.fr"),
+    metadataBase: new URL("https://couverturejjm.com"),
     title: {
       default: "COUVERTURE J.J.M | Charpente & Toiture à Fréjus (83)",
       template: "%s | COUVERTURE J.J.M",
@@ -64,7 +64,7 @@ export async function generateMetadata(): Promise<Metadata> {
     openGraph: {
       type: "website",
       locale: "fr_FR",
-      url: "https://couverture-jjm.fr",
+      url: "https://couverturejjm.com",
       siteName: "COUVERTURE J.J.M",
       title: "COUVERTURE J.J.M | Charpente & Toiture à Fréjus (83)",
       description:
@@ -97,7 +97,7 @@ export async function generateMetadata(): Promise<Metadata> {
       images: ["/images/og-image.jpg"],
     },
     alternates: {
-      canonical: "https://couverture-jjm.fr",
+      canonical: "https://couverturejjm.com",
     },
     other: {
       "geo.region": "FR-83",

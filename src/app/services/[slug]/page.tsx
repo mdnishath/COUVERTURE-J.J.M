@@ -48,12 +48,12 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   return {
     title: `${service.title} à Fréjus et dans le Var (83)`,
     description: `${service.description} Artisan couvreur à Fréjus (83). Devis gratuit ☎ 07 68 25 90 34`,
-    alternates: { canonical: `https://couverture-jjm.fr/services/${slug}` },
+    alternates: { canonical: `https://couverturejjm.com/services/${slug}` },
     openGraph: {
       title: `${service.title} | COUVERTURE J.J.M - Fréjus (83)`,
       description: service.description,
       type: "article",
-      url: `https://couverture-jjm.fr/services/${slug}`,
+      url: `https://couverturejjm.com/services/${slug}`,
     },
   };
 }

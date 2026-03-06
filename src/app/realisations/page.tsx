@@ -1,4 +1,4 @@
-import type { Metadata } from "next";
+﻿import type { Metadata } from "next";
 import SectionRenderer from "@/components/SectionRenderer";
 import BreadcrumbJsonLd from "@/components/seo/BreadcrumbJsonLd";
 import {
@@ -12,7 +12,7 @@ export const metadata: Metadata = {
   title: "Réalisations Toiture Var (83) — Avant / Après",
   description:
     "Découvrez nos réalisations de couverture, charpente et toiture à Fréjus et dans le Var (83). Photos avant/après de nos chantiers.",
-  alternates: { canonical: "https://couverture-jjm.fr/realisations" },
+  alternates: { canonical: "https://couverturejjm.com/realisations" },
 };
 
 export default async function RealisationsPage() {
@@ -26,8 +26,8 @@ export default async function RealisationsPage() {
   return (
     <>
       <BreadcrumbJsonLd items={[
-        { name: "Accueil", url: "https://couverture-jjm.fr" },
-        { name: "Réalisations", url: "https://couverture-jjm.fr/realisations" },
+        { name: "Accueil", url: "https://couverturejjm.com" },
+        { name: "Réalisations", url: "https://couverturejjm.com/realisations" },
       ]} />
       <SectionRenderer
         sections={sections}

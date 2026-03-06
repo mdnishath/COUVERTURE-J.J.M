@@ -1,4 +1,4 @@
-import type { Metadata } from "next";
+﻿import type { Metadata } from "next";
 import SectionRenderer from "@/components/SectionRenderer";
 import BreadcrumbJsonLd from "@/components/seo/BreadcrumbJsonLd";
 import {
@@ -12,7 +12,7 @@ export const metadata: Metadata = {
   title: "À Propos | Couvreur à Fréjus depuis 15 Ans",
   description:
     "COUVERTURE J.J.M, artisan couvreur à Fréjus (83) depuis 15 ans. Garantie décennale, équipe qualifiée, matériaux de qualité dans tout le Var.",
-  alternates: { canonical: "https://couverture-jjm.fr/a-propos" },
+  alternates: { canonical: "https://couverturejjm.com/a-propos" },
 };
 
 export default async function AProposPage() {
@@ -26,8 +26,8 @@ export default async function AProposPage() {
   return (
     <>
       <BreadcrumbJsonLd items={[
-        { name: "Accueil", url: "https://couverture-jjm.fr" },
-        { name: "À Propos", url: "https://couverture-jjm.fr/a-propos" },
+        { name: "Accueil", url: "https://couverturejjm.com" },
+        { name: "À Propos", url: "https://couverturejjm.com/a-propos" },
       ]} />
       <SectionRenderer
         sections={sections}

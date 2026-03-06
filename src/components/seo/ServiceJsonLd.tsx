@@ -1,4 +1,4 @@
-interface ServiceJsonLdProps {
+﻿interface ServiceJsonLdProps {
   name: string;
   description: string;
   slug: string;
@@ -11,7 +11,7 @@ export default function ServiceJsonLd({ name, description, slug }: ServiceJsonLd
     serviceType: name,
     name: name,
     description: description,
-    url: `https://couverture-jjm.fr/services/${slug}`,
+    url: `https://couverturejjm.com/services/${slug}`,
     provider: {
       "@type": "RoofingContractor",
       name: "COUVERTURE J.J.M",
@@ -37,9 +37,9 @@ export default function ServiceJsonLd({ name, description, slug }: ServiceJsonLd
     "@context": "https://schema.org",
     "@type": "BreadcrumbList",
     itemListElement: [
-      { "@type": "ListItem", position: 1, name: "Accueil", item: "https://couverture-jjm.fr" },
-      { "@type": "ListItem", position: 2, name: "Services", item: "https://couverture-jjm.fr/services" },
-      { "@type": "ListItem", position: 3, name: name, item: `https://couverture-jjm.fr/services/${slug}` },
+      { "@type": "ListItem", position: 1, name: "Accueil", item: "https://couverturejjm.com" },
+      { "@type": "ListItem", position: 2, name: "Services", item: "https://couverturejjm.com/services" },
+      { "@type": "ListItem", position: 3, name: name, item: `https://couverturejjm.com/services/${slug}` },
     ],
   };
 

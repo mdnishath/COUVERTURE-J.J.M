@@ -19,12 +19,12 @@ export function middleware(request: NextRequest) {
   if (!isDev) {
     const csp = [
       "default-src 'self'",
-      "script-src 'self' 'unsafe-inline' 'unsafe-eval' https://maps.googleapis.com",
+      "script-src 'self' 'unsafe-inline' 'unsafe-eval' blob: https://maps.googleapis.com",
       "style-src 'self' 'unsafe-inline'",
-      "img-src 'self' data: blob: https://images.unsplash.com https://plus.unsplash.com https://images.pexels.com http://couverture-jjm.local https://couverture-jjm.fr",
+      "img-src 'self' data: blob: https://images.unsplash.com https://plus.unsplash.com https://images.pexels.com https://couverturejjm.com https://api.couverturejjm.com",
       "font-src 'self' data:",
       "frame-src 'self' https://www.google.com https://maps.google.com",
-      "connect-src 'self' http://couverture-jjm.local https://couverture-jjm.fr",
+      "connect-src 'self' https://couverturejjm.com https://api.couverturejjm.com https://www.couverturejjm.com",
     ].join("; ");
 
     response.headers.set("Content-Security-Policy", csp);

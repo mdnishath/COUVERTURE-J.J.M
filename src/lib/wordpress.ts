@@ -203,7 +203,7 @@ const API_URL =
 
 async function fetchAPI<T>(
   endpoint: string,
-  revalidate: number = 3600
+  revalidate: number = 30
 ): Promise<T | null> {
   try {
     const isDev = process.env.NODE_ENV === "development";

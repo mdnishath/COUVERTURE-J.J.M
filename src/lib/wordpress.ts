@@ -202,13 +202,11 @@ const API_URL =
 // ─── Base Fetch with Error Handling ───
 
 async function fetchAPI<T>(
-  endpoint: string,
-  revalidate: number = 30
+  endpoint: string
 ): Promise<T | null> {
   try {
-    const isDev = process.env.NODE_ENV === "development";
     const res = await fetch(`${API_URL}${endpoint}`, {
-      ...(isDev ? { cache: "no-store" as const } : { next: { revalidate } }),
+      cache: "no-store",
     });
 
     if (!res.ok) {
